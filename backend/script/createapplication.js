@@ -4,13 +4,13 @@ import bodyParser from 'body-parser';
 import Application from '../models/application.js'; // Adjust the path to your model file
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/yourDatabaseName', {
+mongoose.connect('mongodb://localhost:27017/Fire-testing', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
